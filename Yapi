@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to My Site</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f9fa;
+      color: #333;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      color: #0066cc;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>🌍 Welcome to My Website!</h1>
+  <p>This is a custom-coded site hosted for free with GitHub Pages.</p>
+  <p>You can edit this <code>index.html</code> file to change the content.</p>
+  <p>Made by <strong>teydrin</strong></p>
+</body>
+</html>
