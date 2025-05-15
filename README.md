@@ -8,4 +8,3 @@ At here, you will find different language trees consisting of families (sino-tib
 
 Feel free to provide feedback!
 
-google-site-verification: google63b5e734b217c2bc
