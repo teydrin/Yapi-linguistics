@@ -1,0 +1,717 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yapi Linguistics - Language Tree Editor</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --tertiary-color: #ecf0f1;
+            --accent-color: #e74c3c;
+            --text-color: #333;
+            --border-color: #bdc3c7;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--tertiary-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 2px solid var(--border-color);
+            margin-bottom: 20px;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+        
+        .logo span {
+            color: var(--secondary-color);
+        }
+        
+        nav button {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            margin-left: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        nav button:hover {
+            background-color: #1a2530;
+        }
+        
+        main {
+            display: flex;
+            flex: 1;
+        }
+        
+        .sidebar {
+            width: 300px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-right: 20px;
+            height: fit-content;
+        }
+        
+        .sidebar h2 {
+            margin-bottom: 15px;
+            color: var(--primary-color);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 10px;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+        
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+        }
+        
+        button.add {
+            background-color: var(--secondary-color);
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+        
+        button.add:hover {
+            background-color: #2980b9;
+        }
+        
+        .tree-container {
+            flex: 1;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            overflow: auto;
+            min-height: 600px;
+        }
+        
+        .tree-container h2 {
+            margin-bottom: 15px;
+            color: var(--primary-color);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 10px;
+        }
+        
+        .tree-visualization {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 4px;
+            min-height: 500px;
+        }
+        
+        ul.tree, ul.tree ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        ul.tree ul {
+            margin-left: 20px;
+        }
+        
+        ul.tree li {
+            margin: 0;
+            padding: 0 0 0 20px;
+            line-height: 20px;
+            position: relative;
+        }
+        
+        ul.tree li::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-left: 1px solid #ccc;
+            height: 100%;
+            width: 1px;
+        }
+        
+        ul.tree li::after {
+            content: "";
+            position: absolute;
+            top: 10px;
+            left: 0;
+            border-top: 1px solid #ccc;
+            width: 20px;
+            height: 0;
+        }
+        
+        ul.tree li:last-child::before {
+            height: 10px;
+        }
+        
+        .node {
+            display: inline-block;
+            padding: 5px 10px;
+            margin: 2px 0;
+            background-color: #fff;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            position: relative;
+        }
+        
+        .node .node-actions {
+            display: none;
+            position: absolute;
+            right: 5px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        
+        .node:hover .node-actions {
+            display: block;
+        }
+        
+        .node .node-actions button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 12px;
+            margin-left: 5px;
+            color: var(--secondary-color);
+        }
+        
+        .node .node-actions button.delete {
+            color: var(--accent-color);
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 20px 0;
+            border-top: 1px solid var(--border-color);
+            color: #777;
+            font-size: 14px;
+        }
+        
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.4);
+        }
+        
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 50%;
+            border-radius: 8px;
+        }
+        
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .modal-header h2 {
+            color: var(--primary-color);
+        }
+        
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        .modal-footer {
+            margin-top: 15px;
+            display: flex;
+            justify-content: flex-end;
+        }
+        
+        .modal-footer button {
+            margin-left: 10px;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        .modal-footer button.save {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+        
+        .modal-footer button.cancel {
+            background-color: #95a5a6;
+            color: white;
+        }
+        
+        textarea {
+            width: 100%;
+            height: 300px;
+            font-family: monospace;
+            padding: 10px;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">Yapi <span>Linguistics</span></div>
+            <nav>
+                <button id="exportBtn">Export Tree</button>
+                <button id="importBtn">Import Tree</button>
+                <button id="clearBtn">Clear Tree</button>
+                <button id="saveBtn">Save for GitHub</button>
+            </nav>
+        </header>
+        
+        <main>
+            <div class="sidebar">
+                <h2>Add Language Node</h2>
+                <form id="nodeForm">
+                    <div class="form-group">
+                        <label for="languageName">Language Name:</label>
+                        <input type="text" id="languageName" placeholder="e.g., Indo-European" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="languageCode">Code (optional):</label>
+                        <input type="text" id="languageCode" placeholder="e.g., ine">
+                    </div>
+                    <div class="form-group">
+                        <label for="parentNode">Parent Node:</label>
+                        <select id="parentNode">
+                            <option value="root">Root (Top Level)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="nodeType">Node Type:</label>
+                        <select id="nodeType">
+                            <option value="family">Language Family</option>
+                            <option value="subfamily">Subfamily</option>
+                            <option value="language">Language</option>
+                            <option value="dialect">Dialect</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="add">Add Node</button>
+                </form>
+            </div>
+            
+            <div class="tree-container">
+                <h2>Language Tree Visualization</h2>
+                <div class="tree-visualization">
+                    <ul id="languageTree" class="tree">
+                        <!-- Tree nodes will be populated here -->
+                    </ul>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Yapi Linguistics © 2025 - Language Tree Editor v1.0</p>
+        </footer>
+    </div>
+    
+    <!-- Export/Import Modal -->
+    <div id="dataModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">Export/Import Data</h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <textarea id="jsonData"></textarea>
+            </div>
+            <div class="modal-footer">
+                <button class="cancel">Cancel</button>
+                <button id="modalAction" class="save">Confirm</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Tree data structure
+            let treeData = [];
+            let nodeIdCounter = 0;
+            
+            // DOM Elements
+            const languageTree = document.getElementById('languageTree');
+            const nodeForm = document.getElementById('nodeForm');
+            const parentNodeSelect = document.getElementById('parentNode');
+            const exportBtn = document.getElementById('exportBtn');
+            const importBtn = document.getElementById('importBtn');
+            const clearBtn = document.getElementById('clearBtn');
+            const saveBtn = document.getElementById('saveBtn');
+            const dataModal = document.getElementById('dataModal');
+            const jsonData = document.getElementById('jsonData');
+            const modalTitle = document.getElementById('modalTitle');
+            const modalAction = document.getElementById('modalAction');
+            const closeBtn = document.querySelector('.close');
+            const cancelBtn = document.querySelector('.cancel');
+            
+            // Form submission for adding nodes
+            nodeForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const languageName = document.getElementById('languageName').value;
+                const languageCode = document.getElementById('languageCode').value;
+                const parentId = parentNodeSelect.value;
+                const nodeType = document.getElementById('nodeType').value;
+                
+                addNode(languageName, languageCode, parentId, nodeType);
+                
+                // Reset form fields
+                document.getElementById('languageName').value = '';
+                document.getElementById('languageCode').value = '';
+            });
+            
+            // Function to add a new node
+            function addNode(name, code, parentId, type) {
+                const newNode = {
+                    id: `node_${++nodeIdCounter}`,
+                    name: name,
+                    code: code,
+                    type: type,
+                    children: []
+                };
+                
+                // Add to root or as a child
+                if (parentId === 'root') {
+                    treeData.push(newNode);
+                } else {
+                    addChildToParent(treeData, parentId, newNode);
+                }
+                
+                // Update the tree visualization and parent select options
+                renderTree();
+                updateParentOptions();
+            }
+            
+            // Recursively add child to parent node
+            function addChildToParent(nodes, parentId, newNode) {
+                for (let node of nodes) {
+                    if (node.id === parentId) {
+                        node.children.push(newNode);
+                        return true;
+                    }
+                    
+                    if (node.children && node.children.length > 0) {
+                        const added = addChildToParent(node.children, parentId, newNode);
+                        if (added) return true;
+                    }
+                }
+                return false;
+            }
+            
+            // Render tree visualization
+            function renderTree() {
+                languageTree.innerHTML = '';
+                
+                if (treeData.length === 0) {
+                    languageTree.innerHTML = '<li><div class="node">No languages added yet</div></li>';
+                    return;
+                }
+                
+                for (let node of treeData) {
+                    const nodeElement = createNodeElement(node);
+                    languageTree.appendChild(nodeElement);
+                }
+            }
+            
+            // Create a DOM element for a node
+            function createNodeElement(node) {
+                const li = document.createElement('li');
+                
+                const nodeDiv = document.createElement('div');
+                nodeDiv.className = 'node';
+                nodeDiv.dataset.id = node.id;
+                
+                let displayName = node.name;
+                if (node.code) {
+                    displayName += ` [${node.code}]`;
+                }
+                
+                const nodeTypeClass = node.type || 'family';
+                nodeDiv.classList.add(nodeTypeClass);
+                
+                const nodeText = document.createTextNode(displayName);
+                nodeDiv.appendChild(nodeText);
+                
+                const nodeActions = document.createElement('div');
+                nodeActions.className = 'node-actions';
+                
+                const editBtn = document.createElement('button');
+                editBtn.textContent = 'Edit';
+                editBtn.addEventListener('click', function() {
+                    // Edit functionality would go here
+                    alert(`Edit functionality for: ${node.name}`);
+                });
+                
+                const deleteBtn = document.createElement('button');
+                deleteBtn.className = 'delete';
+                deleteBtn.textContent = 'Delete';
+                deleteBtn.addEventListener('click', function() {
+                    deleteNode(node.id);
+                });
+                
+                nodeActions.appendChild(editBtn);
+                nodeActions.appendChild(deleteBtn);
+                nodeDiv.appendChild(nodeActions);
+                
+                li.appendChild(nodeDiv);
+                
+                // Handle children recursively
+                if (node.children && node.children.length > 0) {
+                    const ul = document.createElement('ul');
+                    
+                    for (let child of node.children) {
+                        const childElement = createNodeElement(child);
+                        ul.appendChild(childElement);
+                    }
+                    
+                    li.appendChild(ul);
+                }
+                
+                return li;
+            }
+            
+            // Update parent node select options
+            function updateParentOptions() {
+                // Keep the root option
+                parentNodeSelect.innerHTML = '<option value="root">Root (Top Level)</option>';
+                
+                // Add all nodes as potential parents
+                function addNodeOptions(nodes, depth = 0) {
+                    for (let node of nodes) {
+                        const option = document.createElement('option');
+                        option.value = node.id;
+                        
+                        // Add indentation for visual hierarchy
+                        let prefix = '';
+                        for (let i = 0; i < depth; i++) {
+                            prefix += '-- ';
+                        }
+                        
+                        option.textContent = `${prefix}${node.name}`;
+                        parentNodeSelect.appendChild(option);
+                        
+                        if (node.children && node.children.length > 0) {
+                            addNodeOptions(node.children, depth + 1);
+                        }
+                    }
+                }
+                
+                addNodeOptions(treeData);
+            }
+            
+            // Delete a node by ID
+            function deleteNode(nodeId) {
+                // Confirm deletion
+                if (!confirm('Are you sure you want to delete this node and all its children?')) {
+                    return;
+                }
+                
+                // Remove from root level if it's there
+                treeData = treeData.filter(node => node.id !== nodeId);
+                
+                // Remove from children if it's nested
+                function removeFromChildren(nodes) {
+                    for (let node of nodes) {
+                        node.children = node.children.filter(child => child.id !== nodeId);
+                        
+                        if (node.children.length > 0) {
+                            removeFromChildren(node.children);
+                        }
+                    }
+                }
+                
+                removeFromChildren(treeData);
+                
+                // Update the tree and parent options
+                renderTree();
+                updateParentOptions();
+            }
+            
+            // Export tree data
+            exportBtn.addEventListener('click', function() {
+                modalTitle.textContent = 'Export Language Tree Data';
+                jsonData.value = JSON.stringify(treeData, null, 2);
+                modalAction.textContent = 'Copy to Clipboard';
+                dataModal.style.display = 'block';
+                
+                modalAction.onclick = function() {
+                    jsonData.select();
+                    document.execCommand('copy');
+                    alert('Data copied to clipboard!');
+                    dataModal.style.display = 'none';
+                };
+            });
+            
+            // Import tree data
+            importBtn.addEventListener('click', function() {
+                modalTitle.textContent = 'Import Language Tree Data';
+                jsonData.value = '';
+                modalAction.textContent = 'Import';
+                dataModal.style.display = 'block';
+                
+                modalAction.onclick = function() {
+                    try {
+                        const importedData = JSON.parse(jsonData.value);
+                        treeData = importedData;
+                        nodeIdCounter = findHighestId(treeData);
+                        renderTree();
+                        updateParentOptions();
+                        dataModal.style.display = 'none';
+                    } catch (e) {
+                        alert('Invalid JSON data. Please check your input.');
+                    }
+                };
+            });
+            
+            // Find highest node ID for counter
+            function findHighestId(nodes) {
+                let highest = 0;
+                
+                function traverse(nodes) {
+                    for (let node of nodes) {
+                        const idNum = parseInt(node.id.replace('node_', ''));
+                        if (idNum > highest) {
+                            highest = idNum;
+                        }
+                        
+                        if (node.children && node.children.length > 0) {
+                            traverse(node.children);
+                        }
+                    }
+                }
+                
+                traverse(nodes);
+                return highest;
+            }
+            
+            // Clear tree
+            clearBtn.addEventListener('click', function() {
+                if (confirm('Are you sure you want to clear the entire tree?')) {
+                    treeData = [];
+                    nodeIdCounter = 0;
+                    renderTree();
+                    updateParentOptions();
+                }
+            });
+            
+            // Save for GitHub
+            saveBtn.addEventListener('click', function() {
+                modalTitle.textContent = 'Save Language Tree for GitHub';
+                
+                const saveData = {
+                    name: 'Yapi Linguistics Language Tree',
+                    version: '1.0',
+                    date: new Date().toISOString(),
+                    tree: treeData
+                };
+                
+                jsonData.value = JSON.stringify(saveData, null, 2);
+                modalAction.textContent = 'Download JSON';
+                dataModal.style.display = 'block';
+                
+                modalAction.onclick = function() {
+                    const blob = new Blob([jsonData.value], { type: 'application/json' });
+                    const url = URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.href = url;
+                    a.download = 'yapi-language-tree.json';
+                    document.body.appendChild(a);
+                    a.click();
+                    document.body.removeChild(a);
+                    URL.revokeObjectURL(url);
+                    dataModal.style.display = 'none';
+                };
+            });
+            
+            // Close modal
+            closeBtn.onclick = function() {
+                dataModal.style.display = 'none';
+            };
+            
+            cancelBtn.onclick = function() {
+                dataModal.style.display = 'none';
+            };
+            
+            window.onclick = function(event) {
+                if (event.target === dataModal) {
+                    dataModal.style.display = 'none';
+                }
+            };
+            
+            // Initial render
+            renderTree();
+        });
+    </script>
+</body>
+</html>
