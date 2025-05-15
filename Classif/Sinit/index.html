@@ -1,1 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Yapi Linguistics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 min-h-screen">
+  <div class="font-sans bg-white shadow-md rounded-md max-w-4xl mx-auto border border-gray-200 my-8">
 
+    <!-- Top navigation bar -->
+    <div class="bg-indigo-700 text-white px-4 py-1 flex justify-between items-center">
+      <div class="flex items-center">
+        <span class="font-bold text-lg">Yapi Linguistics</span>
+        <span class="text-xs ml-2 bg-indigo-600 px-2 py-0.5 rounded">1.0</span>
+      </div>
+      <div class="flex items-center space-x-4 text-sm">
+        <a href="#" class="hover:underline">Languages</a>
+        <a href="#" class="hover:underline">Families</a>
+        <a href="#" class="hover:underline">References</a>
+        <a href="#" class="hover:underline">About</a>
+      </div>
+    </div>
+
+    <!-- Search bar -->
+    <div class="bg-gray-100 p-3 border-b border-gray-300">
+      <div class="flex">
+        <input 
+          type="text" 
+          placeholder="Search languages..." 
+          class="w-full px-3 py-1.5 border border-gray-300 rounded-l focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm"
+        />
+        <button class="bg-indigo-600 text-white px-4 py-1.5 rounded-r text-sm hover:bg-indigo-700">
+          Search
+        </button>
+      </div>
+    </div>
+
+    <!-- Breadcrumbs -->
+    <div class="px-4 py-2 bg-gray-50 border-b border-gray-200">
+      <div class="flex items-center text-sm">
+        <a href="#" class="text-blue-600 hover:underline">Languoid</a>
+        <span class="mx-1 text-gray-500">›</span>
+        <a href="#" class="text-blue-600 hover:underline">Sinitic</a>
+      </div>
+    </div>
+
+    <!-- Main content area -->
+    <div class="p-4">
+      <div class="mb-4">
+        <h1 class="text-xl font-bold text-gray-800">Sinitic</h1>
+        <div class="text-sm text-gray-600">Language Family • ISO 639-3: sit</div>
+      </div>
+
+      <!-- Tabs -->
+      <div class="mb-4 border-b border-gray-200">
+        <ul class="flex flex-wrap -mb-px">
+          <li class="mr-2">
+            <a class="inline-block py-2 px-4 border-b-2 border-indigo-600 text-indigo-600 font-medium text-sm" href="#">
+              Tree
+            </a>
+          </li>
+          <li class="mr-2">
+            <a class="inline-block py-2 px-4 text-gray-500 hover:text-gray-600 font-medium text-sm" href="#">
+              Info
+            </a>
+          </li>
+          <li class="mr-2">
+            <a class="inline-block py-2 px-4 text-gray-500 hover:text-gray-600 font-medium text-sm" href="#">
+              Sources
+            </a>
+          </li>
+          <li class="mr-2">
+            <a class="inline-block py-2 px-4 text-gray-500 hover:text-gray-600 font-medium text-sm" href="#">
+              Children
+            </a>
+          </li>
+          <li class="mr-2">
+            <a class="inline-block py-2 px-4 text-gray-500 hover:text-gray-600 font-medium text-sm" href="#">
+              Alternative Names
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Legend -->
+      <div class="mb-4">
+        <div class="p-2 bg-gray-50 border border-gray-200 rounded text-sm flex flex-wrap">
+          <div class="flex items-center mr-4 mb-1">
+            <span class="text-blue-700 mr-1 font-medium">◆</span>
+            <span class="text-xs text-gray-600">Family</span>
+          </div>
+          <div class="flex items-center mr-4 mb-1">
+            <span class="text-green-700 mr-1 font-medium">●</span>
+            <span class="text-xs text-gray-600">Living Language</span>
+          </div>
+          <div class="flex items-center mr-4 mb-1">
+            <span class="text-gray-500 mr-1 font-medium">†</span>
+            <span class="text-xs text-gray-600">Extinct Language</span>
+          </div>
+          <div class="flex items-center mr-4 mb-1">
+            <span class="text-gray-600 mr-1 font-medium">○</span>
+            <span class="text-xs text-gray-600">Dialect</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Classification -->
+      <div class="mb-3 flex flex-wrap items-center text-sm">
+        <span class="font-medium mr-2">Classification:</span>
+        <span class="text-blue-600 hover:underline cursor-pointer">Sino-Tibetan</span>
+        <span class="mx-1 text-gray-500">›</span>
+        <span class="text-blue-600 font-medium">Sinitic</span>
+      </div>
+
+      <!-- Tree container (complete static tree) -->
+      <div class="border border-gray-200 rounded bg-white mb-4 px-2 py-3 text-sm leading-relaxed">
+        <div>
+          <span class="text-blue-700 font-semibold">◆</span> <span class="font-semibold">Sinitic</span>
+          <div class="ml-5">
+            <div>
+              <span class="text-blue-700 font-semibold">◆</span> Bai
+            </div>
+            <div>
+              <span class="text-blue-700 font-semibold">◆</span> Waxianghua
+            </div>
+            <div>
+              <span class="text-blue-700 font-semibold">◆</span> Cai-long
+            </div>
+            <div>
+              <span class="text-gray-500">†</span> Old Chinese
+            </div>
+            <div>
+              <span class="text-blue-700 font-semibold">◆</span> Chinese [31]
+              <div class="ml-5">
+                <div>
+                  <span class="text-gray-500">†</span> Classical Chinese
+                </div>
+                <div>
+                  <span class="text-gray-500">†</span> Eastern Han Chinese
+                </div>
+                <div>
+                  <span class="text-blue-700 font-semibold">◆</span> Min [9]
+                  <div class="ml-5">
+                    <div>
+                      <span class="text-blue-700 font-semibold">◆</span> Coastal Min
+                      <div class="ml-5">
+                        <div>
+                          <span class="text-blue-700 font-semibold">◆</span> Minnan
+                          <div class="ml-5">
+                            <div><span class="text-green-700">●</span> Hokkien</div>
+                            <div><span class="text-green-700">●</span> Teochew</div>
+                            <div><span class="text-green-700">●</span> Lei-Qiong</div>
+                          </div>
+                        </div>
+                        <div><span class="text-green-700">●</span> Puxian</div>
+                        <div><span class="text-green-700">●</span> Mindong</div>
+                      </div>
+                    </div>
+                    <div>
+                      <span class="text-blue-700 font-semibold">◆</span> Inland Min
+                      <div class="ml-5">
+                        <div>
+                          <span class="text-blue-700 font-semibold">◆</span> Minzhong
+                          <div class="ml-5">
+                            <div><span class="text-green-700">●</span> Shaxian</div>
+                            <div><span class="text-green-700">●</span> Yongan</div>
+                          </div>
+                        </div>
+                        <div>
+                          <span class="text-blue-700 font-semibold">◆</span> Minbei
+                          <div class="ml-5">
+                            <div><span class="text-green-700">●</span> Min Shaojiang</div>
+                            <div><span class="text-gray-600">○</span> Minbei</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <span class="text-blue-700 font-semibold">◆</span> Middle-Modern Sinitic [20]
+                  <div class="ml-5">
+                    <div>
+                      <span class="text-gray-500">†</span> Early Middle Chinese
+                    </div>
+                    <div>
+                      <span class="text-blue-700 font-semibold">◆</span> Macro-Wu [6]
+                      <div class="ml-5">
+                        <div><span class="text-green-700">●</span> Taihu</div>
+                        <div><span class="text-green-700">●</span> Huizhou</div>
+                        <div>
+                          <span class="text-blue-700 font-semibold">◆</span> Southern Wu [4]
+                          <div class="ml-5">
+                            <div><span class="text-green-700">●</span> Jinhua</div>
+                            <div><span class="text-green-700">●</span> Shangshan</div>
+                            <div><span class="text-green-700">●</span> Lishui</div>
+                            <div><span class="text-green-700">●</span> Wenzhounese</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span class="text-blue-700 font-semibold">◆</span> Late-Middle Sinitic [13]
+                      <div class="ml-5">
+                        <div><span class="text-gray-500">†</span> Tang-Song Chinese</div>
+                        <div><span class="text-green-700">●</span> Hakka Chinese</div>
+                        <div><span class="text-green-700">●</span> Gan Chinese</div>
+                        <div><span class="text-green-700">●</span> Cantonese</div>
+                        <div>
+                          <span class="text-blue-700 font-semibold">◆</span> Xiang Chinese [2]
+                          <div class="ml-5">
+                            <div><span class="text-green-700">●</span> Xiang Old</div>
+                            <div><span class="text-green-700">●</span> Xiang New</div>
+                          </div>
+                        </div>
+                        <div><span class="text-green-700">●</span> Guibei Pinghua</div>
+                        <div><span class="text-gray-600">○</span> Shaoshan Tuhua</div>
+                        <div>
+                          <span class="text-blue-700 font-semibold">◆</span> Mandarinic [5]
+                          <div class="ml-5">
+                            <div><span class="text-green-700">●</span> Jianghuai</div>
+                            <div><span class="text-green-700">●</span> Southwest</div>
+                            <div><span class="text-green-700">●</span> Jin</div>
+                            <div><span class="text-green-700">●</span> Dungan</div>
+                            <div><span class="text-green-700">●</span> Proper Mandarin</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- End Chinese children -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="mt-4 p-3 bg-gray-50 border border-gray-200 rounded text-sm">
+        <div class="flex flex-wrap gap-4">
+          <div>
+            <span class="font-medium">Languages:</span> 31
+          </div>
+          <div>
+            <span class="font-medium">Dialects:</span> 2
+          </div>
+          <div>
+            <span class="font-medium">Extinct:</span> 4
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="bg-gray-100 p-3 border-t border-gray-300 text-xs text-gray-600">
+      <div class="flex flex-col md:flex-row md:justify-between">
+        <div>© 2025 Yapi Linguistics 1.0 • Yapi Linguistics Team</div>
+        <div class="flex space-x-4 mt-1 md:mt-0">
+          <a href="#" class="text-blue-600 hover:underline">References</a>
+          <a href="#" class="text-blue-600 hover:underline">Downloads</a>
+          <a href="#" class="text-blue-600 hover:underline">API</a>
+          <a href="#" class="text-blue-600 hover:underline">Documentation</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+                                   </html>
