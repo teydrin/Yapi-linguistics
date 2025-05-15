@@ -8,3 +8,9 @@ At here, you will find different language trees with families (sino-tibetan,indo
 
 Feel free to provide feedback!
 
+{
+  "name": "Yapi Linguistics Language Tree",
+  "version": "1.0",
+  "date": "2025-05-15T04:04:30.784Z",
+  "tree": []
+}
