@@ -1,5 +1,7 @@
-#Yapi-Linguistics
+Yapi-Linguistics
 
-#Welcome To Yapi lingusitics!
+Welcome To Yapi lingusitics!
 
-#The most accurate,engaging linguistic classification system.
+The most accurate,engaging linguistic classification system.
+
+Feel free to provide feedback!
