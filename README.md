@@ -1,10 +1,6 @@
 
 
-Welcome To Yapi lingusitics!
-
-The most engaging linguistic classification system.
-
-At here, you will find different language trees with families (sino-tibetan,indo-european),subfamilies (sinitic, germanic),languages (quanzhang(hokkien) chinese,bavarian) and dialects(Amoy hokkien,tyrolean).Enjoy!
+Create your own language family tree, Export  the code of your trees& import to resume building! Enjoy!
 
 Feel free to provide feedback!
 
