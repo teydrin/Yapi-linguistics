@@ -80,6 +80,13 @@ Lhasa tibetan has  no "的" marker
 
 Lhasa tibetan's verb compounds are not as prelavant as modern chinese languages
 
+| Feature                         | Old Chinese                      | Modern Sinitic (e.g. Hokkien, Mandarin) | Lhasa Tibetan |
+| ------------------------------- | -------------------------------- | --------------------------------------- | -------- |
+| 1. Word Order                   | Flexible (SOV \~ SVO)            | SVO                                     | SOV     |                                      |
+| 2. Sentence-final particles     | Absent                           | Present (e.g., ah, la, le, ma)          | Absent  |                                     |
+| 3. Possessive marker ("的"-type) | Absent (used 之 or juxtaposition) | Present (的 in Mandarin, ê in Hokkien)   | absent    |
+| 4. Resultative verb compounds   | Rare or emerging                 | Fully developed (e.g., 寫好, 吃完)          |Limited   |
+
 IF all those middle chinese agined features were simply independently developed,or are results of pure borrowings, it shouldn't 
 be present in ALL min variants,as some variants (hokkien,which had the biggest port in the world in the 11th century) have 
 much more exposure to mainstream sinitic than variants like eastern min,and "adoption" would be very uneven.
