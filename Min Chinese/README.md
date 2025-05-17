@@ -80,7 +80,7 @@ Lhasa tibetan has  no "的" marker
 
 Lhasa tibetan's verb compounds are not as prelavant as modern chinese languages
 
-| Feature                         | Old Chinese                      | Modern Sinitic (e.g. Hokkien, Mandarin) | Lhasa Tibetan |
+| Feature                         | Old Chinese                      | Hokkien and Hakka                  | Lhasa Tibetan |
 | ------------------------------- | -------------------------------- | --------------------------------------- | -------- |
 | 1. Word Order                   | Flexible (SOV \~ SVO)            | SVO                                     | SOV     |                                      |
 | 2. Sentence-final particles     | Absent                           | Present (e.g., ah, la, le, ma)          | Absent  |                                     |
