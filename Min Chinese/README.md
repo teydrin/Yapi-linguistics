@@ -6,7 +6,7 @@ colloiqual readings underivable from midde chinese. Let's examine the earliest c
 
 | Middle Chinese | Hokkien (earliest) | Old Chinese | Result                          |
 |----------------|--------------------|-------------|----------------------------------|
-| phwung         | hong  (風             | pron        | Direct descendant of MC          |
+| phwung         | hong  (風)            | pron        | Direct descendant of MC          |
 | srann          | sann （三）              | sram        | Direct descendant of MC          |
 | yu             | ho   （雨）              | lu or gwa   | Leans MC, but possibly not a descendant |
 | kaew           | kau  （狗）              | kˤuʔ        | Direct descendant of MC          |
@@ -72,8 +72,9 @@ the syntax that hokkien and hakka both share but old chinese and Lhasa tibetan d
 IF all those middle chinese agined features were simply independently developed(debunked by lhasa tibetan),or are results of pure borrowings, they shouldn't be present in ALL min variants,as some variants (hokkien,which had the biggest port in the world in the 11th century) have 
 much more exposure to mainstream sinitic than variants like eastern min,and "adoption" would be very uneven.
 
-What we are seeing is, that these traits apply to basically all Min variants.
+What we are seeing is, that these traits apply to basically all Min variants.All Min variants fit the 4 features i listed. aswell as the stops,nasal, vowels and vocabulary.
+(Leizhou,yognan,puxian and hockchew all fit it despite having a more complex tone sandhi)
 
 Therfore i firmly belive that the Min variants are descendants of Six dynasties (3rd-5th century) pre qieyun chinese that recived austroasiatic influence(Or perhaps just had a heavy Min substrate) instead of that of old chinese.
 
-Old chinese source: Baxter
+Old chinese pronounciation source: Baxter
