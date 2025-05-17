@@ -84,5 +84,7 @@ IF all those middle chinese agined features were simply independently developed,
 be present in ALL min variants,as some variants (hokkien,which had the biggest port in the world in the 11th century) have 
 much more exposure to mainstream sinitic than variants like eastern min,and "adoption" would be very uneven.
 
+What we are seeing is, that these traits apply to basically all Min variants.
+
 Therfore i firmly belive that the Min variants are descendants of Six dynasties (3rd-6th century) chinese that recived massive 
 austroasiatic influence.
