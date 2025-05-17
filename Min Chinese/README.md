@@ -62,16 +62,22 @@ result to such a similarity,as we see below:
 the syntax that hokkien and hakka both share but old chinese doesn't have:
 
 1.SVO word order (flexible in old chinese)
+
 2.Sentence/Final praticles (none in old chinese)
+
 3."的" procession marker (nonexistant in old chinese)
+
 4.Resultative verb compounds (not much yet in old chinese)
 
 One may still argue that the Min languages evolved those features that fit other sinitic languages in coincidence, but let's 
 examine lhasa tibetan instead
 
 Lhasa tibetan has SOV word order
+
 Lhasa tibetan has no sentence/Final praticles
+
 Lhasa tibetan has  no "的" marker
+
 Lhasa tibetan's verb compounds are not as prelavant as modern chinese languages
 
 IF all those middle chinese agined features were simply independently developed,or are results of pure borrowings, it shouldn't 
