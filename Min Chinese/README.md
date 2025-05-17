@@ -4,7 +4,7 @@ Is Min Really a descendant of Old chinese?
 It is common among major linguists, to think of the Min languages,spoken in fujian,as descendants of old chinese due to some earliest 
 colloiqual readings underivable from midde chinese. Let's examine the earliest colliqual readings in hokkien (a southern min language)
 
-      Middle chinese Hokkien(earliest)  Old Chinese     Result
+    Middle chinese   Hokkien(earliest)     Old Chinese     Result
 風      phwung               hong         pron       Direct descendant of MC
 
 衫       srann               sann         sram       Direct descendant of MC
