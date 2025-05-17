@@ -6,17 +6,29 @@ colloiqual readings underivable from midde chinese. Let's examine the earliest c
 
       Middle chinese Hokkien(earliest)  Old Chinese     Result
 風      phwung               hong         pron       Direct descendant of MC
+
 衫       srann               sann         sram       Direct descendant of MC
+
 雨        yu                  ho        lu or gwa    Underivable from both OC and MC
+
 狗       Kaew                kau       	kˤuʔ       Direct descendant of MC
+
 門       mjun                moi          mə[n]      Leans MC,Likley not derived from either
+
 花       xwae                hue          qʷʰˤra     Direct descendant of MC
+
 床       djrang              sng          lron       Underivable from both OC and MC
+
 看       khanH               kuann        khan-s     Direct descendant of MC
+
 大        dai                 toa         lˤat-s     d->t -ai->oa,likley descendant of MC
+
 細        sjejH               seh         set-s      Direct descendant of MC
+
 肉        nywuk               bah          nuk       Underivable from both
+
 火        xwaH                hue         pʰˤraʔ     Direct descendant of MC
+
 水        tsywijX            tsui         [s]tur     Direct descendant of MC
 
 As you can see,the earliest hokkien readings underivable from middle chinese aren't derivable from old chinese as well.
