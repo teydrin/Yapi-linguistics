@@ -15,7 +15,7 @@ colloiqual readings underivable from midde chinese. Let's examine the earliest c
 | djrang         | sng （床）               | lron        | Underivable from both OC and MC  |
 | khanH          | kuann  （看）            | khan-s      | Direct descendant of MC          |
 | dai            | toa  （大）              | lˤat-s      | d→t, ai→oa → Descendant of MC    |
-| sjejH          | seh                | set-s       | Direct descendant of MC          |
+| sjejH          | seh   （細）             | set-s       | Direct descendant of MC          |
 | nywuk          | bah （肉）               | nuk         | Underivable from both            |
 | xwaH           | hue  （火）              | pʰˤraʔ      | Direct descendant of MC          |
 | tsywijX        | tsui  （水）             | [s]tur      | Direct descendant of MC          |
