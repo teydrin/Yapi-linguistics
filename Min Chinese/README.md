@@ -6,19 +6,19 @@ colloiqual readings underivable from midde chinese. Let's examine the earliest c
 
 | Middle Chinese | Hokkien (earliest) | Old Chinese | Result                          |
 |----------------|--------------------|-------------|----------------------------------|
-| phwung         | hong               | pron        | Direct descendant of MC          |
-| srann          | sann               | sram        | Direct descendant of MC          |
-| yu             | ho                 | lu or gwa   | Underivable from both OC and MC  |
-| kaew           | kau                | kˤuʔ        | Direct descendant of MC          |
-| mjun           | moi                | mə[n]       | Leans MC, likely not derived     |
-| xwae           | hue                | qʷʰˤra      | Direct descendant of MC          |
-| djrang         | sng                | lron        | Underivable from both OC and MC  |
-| khanH          | kuann              | khan-s      | Direct descendant of MC          |
-| dai            | toa                | lˤat-s      | d→t, ai→oa → Descendant of MC    |
+| phwung         | hong  (風             | pron        | Direct descendant of MC          |
+| srann          | sann （三）              | sram        | Direct descendant of MC          |
+| yu             | ho   （雨）              | lu or gwa   | Underivable from both OC and MC  |
+| kaew           | kau  （狗）              | kˤuʔ        | Direct descendant of MC          |
+| mjun           | moi （門）               | mə[n]       | Leans MC, likely not derived     |
+| xwae           | hue （花）               | qʷʰˤra      | Direct descendant of MC          |
+| djrang         | sng （床）               | lron        | Underivable from both OC and MC  |
+| khanH          | kuann  （看）            | khan-s      | Direct descendant of MC          |
+| dai            | toa  （大）              | lˤat-s      | d→t, ai→oa → Descendant of MC    |
 | sjejH          | seh                | set-s       | Direct descendant of MC          |
-| nywuk          | bah                | nuk         | Underivable from both            |
-| xwaH           | hue                | pʰˤraʔ      | Direct descendant of MC          |
-| tsywijX        | tsui               | [s]tur      | Direct descendant of MC          |
+| nywuk          | bah （肉）               | nuk         | Underivable from both            |
+| xwaH           | hue  （火）              | pʰˤraʔ      | Direct descendant of MC          |
+| tsywijX        | tsui  （水）             | [s]tur      | Direct descendant of MC          |
 
 
 As you can see,the earliest hokkien readings underivable from middle chinese aren't derivable from old chinese as well.
