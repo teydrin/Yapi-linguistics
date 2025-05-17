@@ -62,7 +62,7 @@ result to such a similarity,as we see below:
 the syntax that hokkien and hakka both share but old chinese and Lhasa tibetan doesn't have:
 
 
-| Feature                         | Old Chinese                      | Hokkien and Hakka                  | Lhasa Tibetan |
+| Feature                         | Old Chinese                      | Hokkien,hockchew and Hakka                  | Lhasa Tibetan |
 | ------------------------------- | -------------------------------- | --------------------------------------- | -------- |
 | 1. Word Order                   | Flexible (SOV \~ SVO)            | SVO                                     | SOV     |                                      |
 | 2. Sentence-final particles     | Absent                           | Present (e.g., ah, la, le, ma)          | Absent  |                                     |
