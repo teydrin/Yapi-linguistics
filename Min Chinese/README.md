@@ -59,7 +59,7 @@ This is likley not a coincidence due to chance. At best it's external influence 
 result to such a similarity,as we see below:
 
 
-the syntax that hokkien and hakka both share but old chinese and Lhasa tibetan doesn't have:
+the syntax that hokkien and hakka both share but old chinese and Lhasa tibetan don't have:
 
 
 | Feature                         | Old Chinese                      | Hokkien,hockchew and Hakka                  | Lhasa Tibetan |
