@@ -10,7 +10,7 @@ colloiqual readings underivable from midde chinese. Let's examine the earliest c
 | srann          | sann （三）              | sram        | Direct descendant of MC          |
 | yu             | ho   （雨）              | lu or gwa   | Underivable from both OC and MC  |
 | kaew           | kau  （狗）              | kˤuʔ        | Direct descendant of MC          |
-| mjun           | moi （門）               | mə[n]       | Leans MC, likely not derived     |
+| mjun           | mui/mng （門）               | mə[n]       | Leans MC,     |
 | xwae           | hue （花）               | qʷʰˤra      | Direct descendant of MC          |
 | djrang         | sng （床）               | lron        | Underivable from both OC and MC  |
 | khanH          | kuann  （看）            | khan-s      | Direct descendant of MC          |
