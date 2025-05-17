@@ -74,4 +74,4 @@ much more exposure to mainstream sinitic than variants like eastern min,and "ado
 
 What we are seeing is, that these traits apply to basically all Min variants.
 
-Therfore i firmly belive that the Min variants are descendants of Six dynasties (3rd-6th century) pre qieyun chinese that recived austroasiatic influence, instead of that of old vhinese.
+Therfore i firmly belive that the Min variants are descendants of Six dynasties (3rd-6th century) pre qieyun chinese that recived austroasiatic influence(Or perhaps just had a heavy Min substrate) instead of that of old vhinese.
