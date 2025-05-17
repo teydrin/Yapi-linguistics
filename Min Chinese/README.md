@@ -59,26 +59,8 @@ This is likley not a coincidence due to chance. At best it's external influence 
 result to such a similarity,as we see below:
 
 
-the syntax that hokkien and hakka both share but old chinese doesn't have:
+the syntax that hokkien and hakka both share but old chinese and Lhasa tibetan doesn't have:
 
-1.SVO word order (flexible in old chinese)
-
-2.Sentence/Final praticles (none in old chinese)
-
-3."的" procession marker (nonexistant in old chinese)
-
-4.Resultative verb compounds (not much yet in old chinese)
-
-One may still argue that the Min languages evolved those features that fit other sinitic languages in coincidence, but let's 
-examine lhasa tibetan instead
-
-Lhasa tibetan has SOV word order
-
-Lhasa tibetan has no sentence/Final praticles
-
-Lhasa tibetan has  no "的" marker
-
-Lhasa tibetan's verb compounds are not as prelavant as modern chinese languages
 
 | Feature                         | Old Chinese                      | Hokkien and Hakka                  | Lhasa Tibetan |
 | ------------------------------- | -------------------------------- | --------------------------------------- | -------- |
@@ -87,8 +69,7 @@ Lhasa tibetan's verb compounds are not as prelavant as modern chinese languages
 | 3. Possessive marker ("的"-type) | Absent (used 之 or juxtaposition) | Present (的 in Mandarin, ê in Hokkien)   | absent    |
 | 4. Resultative verb compounds   | Rare or emerging                 | Fully developed (e.g., 寫好, 吃完)          |Limited   |
 
-IF all those middle chinese agined features were simply independently developed,or are results of pure borrowings, it shouldn't 
-be present in ALL min variants,as some variants (hokkien,which had the biggest port in the world in the 11th century) have 
+IF all those middle chinese agined features were simply independently developed(debunked by lhasa tibetan),or are results of pure borrowings, they shouldn't be present in ALL min variants,as some variants (hokkien,which had the biggest port in the world in the 11th century) have 
 much more exposure to mainstream sinitic than variants like eastern min,and "adoption" would be very uneven.
 
 What we are seeing is, that these traits apply to basically all Min variants.
