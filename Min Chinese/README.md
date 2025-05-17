@@ -22,7 +22,7 @@ colloiqual readings underivable from midde chinese. Let's examine the earliest c
 
 
 As you can see,the earliest hokkien readings underivable from middle chinese aren't derivable from old chinese as well.
-Therfore i belive that Min is actually a product of very Early middle chinese that inherited significant non-sinitic readings.
+Therfore i belive that Min is actually a product of very Early middle chinese that inherited significant non-sinitic readings(heavy ancient min substrate, thicker than other sinitic languages).
 
 Let's examine the finals of hokkien and compare them with that of cantonese:
 
